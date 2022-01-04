@@ -1,0 +1,77 @@
+/****************************************** General Styles **********************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/****************************************** Contact Section **********************************/
+
+.contact__section {
+  background-image: url(../images/contact.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.contact__section form {
+  color: white;
+}
+
+/****************************************** Form **********************************/
+
+.form__container {
+  display: flex;
+  margin-top: 4rem;
+  background-color: rgba(255, 79, 47, 0.801);
+  padding: 2rem;
+  display: flex;
+  gap: 0.7rem;
+  width: 70%;
+  max-width: 35rem;
+}
+
+.form__container h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input__container input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+textarea {
+  resize: none;
+  padding: 0.5rem;
+  height: 6rem;
+}
+
+.contact__btn {
+  padding: 0.5rem;
+  background-color: rgb(255, 38, 0);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-container {
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .form__container {
+    width: 80%;
+    padding: 1rem;
+  }
+}

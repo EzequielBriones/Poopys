@@ -1,0 +1,23 @@
+<body class="adopciones__page">
+  <main >
+    <section class="adopciones__section">
+      <h1>Estos son nuestros perros disponibles para adopción</h1>
+      <section class="dogs__container">
+        {{#each dogs}}
+            <div class="dog__container">
+              <div class="dog__image">
+                <img src={{imageURL}} alt={{nombre}} />
+              </div>
+              <p><span class="dog__span">Nombre:</span> {{nombre}}</p>
+              <p><span class="dog__span">Edad:</span> {{edad}}</p>
+              <p><span class="dog__span">Tamaño:</span> {{tamaño}}</p>
+              <p><span class="dog__span">Sexo:</span> {{sexo}}</p>
+              <p><span class="dog__span">Raza:</span> {{raza}}</p>
+              <p><span class="dog__span">Descripción:</span> {{descripción}}</p>
+              <span class="dog__CTA"><a  href="/contact"><input type="button" value="Interesado? Contactanos!"></a></span>
+            </div>
+        {{/each}}
+      </section>
+    </section>
+  </main>
+</body>

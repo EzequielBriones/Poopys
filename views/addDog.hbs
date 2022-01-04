@@ -1,0 +1,16 @@
+<body class="dogs__section">
+  <form class="dogs__form" action="/adopcion/addDog" method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="Nombre del perro" name="nombre" >
+    <input type="text" placeholder="Edad del perro" name="edad" >
+    <input type="text" placeholder="Tamaño del perro" name="tamaño"  >
+    <input type="text" placeholder="Sexo del perro" name="sexo"  >
+    <input type="text" placeholder="Raza del perro" name="raza" >
+    <textarea placeholder="Añadir pequeña descripcion" name="descripción"></textarea>
+    <label for="archivo">Imagen del perro</label>
+    <input type="file" name="archivo">
+    <div>
+      <input type="submit" value="Agregar">
+      <a href="/adopcion"><input type="button" value="Cancelar"></a>
+    </div>
+  </form>
+</body>

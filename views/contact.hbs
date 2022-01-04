@@ -1,0 +1,29 @@
+<head>
+  <link rel='stylesheet' href='/stylesheets/contact.css' />
+</head>
+
+<body class="contact__section">
+  <form action="/contact" method="post" class="form__container">
+    <h1>Te interesa alguno de nuestros perros o tenes alguna pregunta? No dudes en contactarnos!</h1>
+    <div class="input__container">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" placeholder="Ingrese su nombre"> 
+    </div>
+    <div class="input__container"> 
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Ingrese su email"> 
+    </div>
+    <div class="input__container">
+      <label for="subject">Asunto</label>
+      <input type="text" name="subject" placeholder="Ingrese su asunto"> 
+    </div>
+    <label for="message">Mensaje</label>
+    <textarea name="message" placeholder="Mensaje"></textarea>
+    <div class="btn-container">
+      <button type="submit" class="contact__btn">Send</button>
+      <div>
+        <p class="contact-msg">{{message}}</p>
+      </div>
+    </div>
+  </form>
+</body>

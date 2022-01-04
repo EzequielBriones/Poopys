@@ -1,0 +1,22 @@
+<body>
+  <section class="login__section">
+  </section>
+    <form action="/login" method="post" class="form__container">
+      <h2>Ingrese al sistema con sus datos</h2>
+      <div class="form__input">
+        <label for="user">Usuario</label>
+        <input name="user" type="text" placeholder="Ingrese su usuario" autofocus>
+      </div>
+      <div class="form__input">
+        <label for="pass">Contraseña</label>
+        <input name="pass" type="password" placeholder="Ingrese su contraseña">
+      </div>
+      <div class="login__btns">
+        <input type="submit" value="Ingresar" class="form__btn">
+        <a href="/" class="btn-inicio">inicio</a>
+      </div>
+      {{#if error}}
+      <p>Usuario o contraseña equivocado</p>
+      {{/if}}
+    </form>
+</body>

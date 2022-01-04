@@ -1,0 +1,26 @@
+<body class="adopciones__page">
+  <main>
+    <section class="adopciones__section">
+      <h1 class="test">Estos son los perros del SS</h1>
+      <a href="/adopcion/addDog"><input class="btn-agregar" type="button" value="Agregar"></a>
+      <section class="dogs__container">
+        {{#each dogs}}
+            <div class="dog__container">
+              <div class="dog__image">
+                <img src={{imageURL}} alt="{{nombre}}" />
+              </div>
+              <p><span class="dog__span">Id:</span> {{id}}</p>
+              <p><span class="dog__span">Nombre:</span> {{nombre}}</p>
+              <p><span class="dog__span">Edad:</span> {{edad}}</p>
+              <p><span class="dog__span">Tamaño:</span> {{tamaño}}</p>
+              <p><span class="dog__span">Sexo:</span> {{sexo}}</p>
+              <p><span class="dog__span">Raza:</span> {{raza}}</p>
+              <p><span class="dog__span">Descripción:</span> {{descripción}}</p>
+              <span class="dog__CTA"><a  href="/adopcion/editDogs/{{id}}"><input type="button" value="Editar"></a></span>
+            </div>
+        {{/each}}
+      </section>
+      <a class="logout-btn" href="/login/logout">Cerrar sesion</a>
+    </section>
+  </main>
+</body>
